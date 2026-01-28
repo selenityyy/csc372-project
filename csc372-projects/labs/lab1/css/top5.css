@@ -1,0 +1,31 @@
+/* background color for the entire page */
+body {
+    background-color: black;
+    color: white;
+    margin: 20px;
+}
+
+/* style for the header */
+h1 {
+    font-family:Georgia, serif;
+    color:white;
+}
+
+/* style for the top 5 list */
+ul {
+    font-family:Helvetica, sans-serif;
+    color:white;
+}
+
+.artist {
+    border:1px solid red;
+    padding:5px;
+    border-radius:10px;
+}
+
+.spotlight {
+    padding: 10px;
+    border: 3px solid yellow;
+    width: 300px;
+    text-align: center;
+}
