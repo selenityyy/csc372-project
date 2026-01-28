@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(211, 180, 226);
+    color: purple;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+
