@@ -1,3 +1,4 @@
+/* Formatting for the "Welcome to the Asian Student Association Website!" header */
 h1 {
     font-size: 36px;
     display: inline-block;
@@ -10,11 +11,13 @@ h1 {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Formatting for the horizontal line that splits the header from the navigation menu */
 hr {
     border: 2px solid rgb(106, 130, 62);
     border-radius: 5px;
 }
 
+/* Formatting for the navigation menu/homepage */
 body {
     border: 5px solid rgb(47, 18, 3);
     box-sizing: border-box;
@@ -38,6 +41,7 @@ nav {
     padding: 10px;
 }
 
+/* Formatting for the "About" and "Socials" buttons in the nav menu to split it from the ASA/PGA ones */
 .first ul {
     list-style-type: none;
     margin: 0;
@@ -50,6 +54,7 @@ nav li {
     margin: 0;
 }
 
+/* Formatting for the "About" and "Socials" buttons */
 nav a {
     display: block;
     color:rgb(54, 64, 35);
@@ -63,16 +68,39 @@ nav a {
     transition: all 0.3s ease;
 }
 
+/* Formatting for the "About" and "Socials" buttons when hovering over them and give them a new pretty color :D */
 nav a:hover {
     background-color: rgb(199, 163, 155);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     transform: translateY(-2px); /* slight lift on hover */
 }
 
+/* Formatting for the "ASA" and "PGA" buttons in the nav menu to split it from the "About" and "Socials" ones */
 .second {
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
+}
+
+/* Formatting for the "ASA" and "PGA" buttons */
+.second a {
+    display: block;
+    color: rgb(252, 179, 197);
+    background-color: rgb(54, 64, 35);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(106, 130, 62);
+    /* Used Claude AI to help me with the parameters for making some box shadows*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Formatting for the "ASA" and "PGA" buttons when hovering over them and give them a new pretty color part 2! :D */
+.second a:hover {
+    background-color: rgb(199, 163, 155);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px); /* slight lift on hover */
 }
 
 .page-section {
@@ -107,10 +135,12 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* content wrapper to push the footer all the way to the bottom */
 .content-wrapper {
     flex : 1;
 }
 
+/* footer formatting */
 footer {
     padding: 5px;
     text-align: center;
