@@ -1,0 +1,155 @@
+/* Selena Cabral, 2/6/2026
+This is a CSS file for the homepage of the website.
+This includes some styling for the background, welcome header, the buttons to lead into other pages, the images, and the footer
+*/
+
+/* Formatting for the "Welcome to the Asian Student Association Website!" header */
+h1 {
+    font-size: 36px;
+    display: inline-block;
+    text-align: center;
+    border: 4px solid rgb(106, 130, 62);
+    border-radius: 10px;
+    border-style: double;
+    padding: 10px;
+    background-color: rgb(252, 179, 197);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Formatting for the horizontal line that splits the header from the navigation menu */
+hr {
+    border: 2px solid rgb(106, 130, 62);
+    border-radius: 5px;
+}
+
+/* Formatting for the navigation menu/homepage */
+body {
+    border: 5px solid rgb(47, 18, 3);
+    box-sizing: border-box;
+    background-color: rgb(255, 241, 181);
+    /*Used Claude AI to help me create some sort of random pattern for the background so that it wasn't bland */
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
+    color: rgb(67, 48, 46);
+    font-family: 'Monaco', monospace;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+nav {
+    /* buttons for the navigation menu */
+    background-color: rgb(255, 241, 181);
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
+    padding: 10px;
+}
+
+/* Formatting for the "About" and "Socials" buttons in the nav menu to split it from the ASA/PGA ones */
+.first ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0;
+}
+
+/* Formatting for the "About" and "Socials" buttons */
+nav a {
+    display: block;
+    color:rgb(54, 64, 35);
+    background-color: rgb(230, 177, 196);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(54, 64, 35);
+    /* Used Claude AI to help me with the parameters for making some box shadows*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Formatting for the "About" and "Socials" buttons when hovering over them and give them a new pretty color :D */
+nav a:hover {
+    background-color: rgb(199, 163, 155);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px); /* slight lift on hover */
+}
+
+/* Formatting for the "ASA" and "PGA" buttons in the nav menu to split it from the "About" and "Socials" ones */
+.second {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Formatting for the "ASA" and "PGA" buttons */
+.second a {
+    display: block;
+    color: rgb(252, 179, 197);
+    background-color: rgb(54, 64, 35);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(106, 130, 62);
+    /* Used Claude AI to help me with the parameters for making some box shadows*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Formatting for the "ASA" and "PGA" buttons when hovering over them and give them a new pretty color part 2! :D */
+.second a:hover {
+    background-color: rgb(199, 163, 155);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px); /* slight lift on hover */
+}
+
+.page-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.page-button {
+    display: block;
+    color: rgb(252, 179, 197);
+    background-color: rgb(54, 64, 35);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(106, 130, 62);
+    /* Used Claude AI to help me with the parameters for making some box shadows*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.page-button:hover {
+    background-color: rgb(199, 163, 155);
+}
+
+.page-img {
+    width: 500px;
+    height: auto;
+    border: 3px solid rgb(252, 179, 197);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* content wrapper to push the footer all the way to the bottom */
+.content-wrapper {
+    flex : 1;
+}
+
+/* footer formatting */
+footer {
+    padding: 5px;
+    text-align: center;
+    color:rgb(67, 48, 46);
+    font-size: 12px;
+    border-top: 2px solid rgb(54, 64, 35);
+}
