@@ -1,0 +1,49 @@
+body {
+  background-color: #fff;
+  color: #666;
+  font-family: 'Open Sans', arial, sans-serif;
+  width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 1em 0 0 0;
+  float: left;
+  width: 225px;
+  height: 220px;
+  background-image: url('../img/digital_identity_logo.png');
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 2.4em;
+  margin: 0 0 1em 0;
+  color: #000;
+  line-height: 1em;
+  letter-spacing: -.06em;
+  padding: 0;
+}
+
+header {
+  display: block;
+  height: 220px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 30px;
+}
+
+.third {
+  width: 500px;
+  float: left;
+}
+
+p {
+  margin-top: 0;
+}
+
+#loc {
+  padding-top: 2em;
+}
