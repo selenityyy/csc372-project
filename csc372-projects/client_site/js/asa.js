@@ -1,3 +1,5 @@
+// Selena Cabral, 2/14/2026
+// This is the JS file for the ASA page, which handles all of the API calls.
 // api key
 const key = "AIzaSyDlc8NJwhz80XHsFzwpzMFHBFspV1Tymlc";
 // calendar id
