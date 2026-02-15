@@ -2,52 +2,61 @@
 This is the HTML file for the overall website. The code below currently includes the CSS and JS files, some images, subpage links/buttons, a footer, etc
 This file will be updated along the way 
 -->
+
+<!-- move header up more and then move the about and socials buttons below that internally centered above horizontal line
+   remove "page" from the ASA and PGA buttons
+   make the text on buttons bolder/bigger
+   insta API for the socials/QR code for groupme/handle for tiktok (find tiktok api???)
+   get images of eboard to put in about us page
+   get images of pga leaders
+   get an event calendar to put in ASA page
+   media and pics on the ASA page (the beacon)
+   enhance lighting of ASA group photo on homepage
+   test blue as bg color
+   find other patterns for bg
+   custom loader (koi fish rotating)
+   get more imgs to scroll through some photos on homepage
+-->
+
 <!DOCTYPE html>
-<!-- Link CSS files here-->
- <link rel="stylesheet" href="css/homepage.css">
-
-<!-- Link HTML subpages files here-->
- <link rel="import" href="subpages/ASA.html">
- <link rel="import" href="subpages/PGA.html">
- <link rel="import" href="subpages/socials.html">
- <link rel="import" href="subpages/about.html">
-
 
 <!-- Title for the website-->
  <head>
     <title> ASA Website </title>
+    <!-- Link CSS files here-->
+   <link rel="stylesheet" href="css/homepage.css">
  </head>
 
  <body>
     <!-- Logo for the website-->
-    <img src="images/ASA_logo.png" alt = "ASA logo" width="80" height="70"> 
+    <img src="images/ASA_2_FRONT.png" alt = "ASA logo" width="100" height="100" onclick="goHome()"> 
 
-   <div class = "content-wrapper">
+   <div class = "content-wrapper" style="padding-top: 50px;">
     <!-- website header-->
     <div style = "text-align: center">
       <h1 id="welcome-header"></h1>
     </div>
 
-    <!-- a horizontal line to split the header and the navigation menu-->
-    <hr>
-
     <!-- Main navigation menu-->
      <nav class = "first">
         <ul>
-            <li><a href = "about.html"> About </a></li>
-            <li><a href = "socials.html"> Socials </a></li>
+            <li><a href = "subpages/about.html"> About </a></li>
+            <li><a href = "subpages/socials.html"> Socials </a></li>
         </ul>
      </nav>
+
+     <!-- a horizontal line to split the header and the navigation menu-->
+    <hr>
 
      <!-- Secondary navigation menu-->
      <nav class = "second">
       <div class = "page-section">
-         <a href = "ASA.html" class = "page-button"> ASA page </a>
+         <a href = "subpages/ASA.html" class = "page-button"> ASA </a>
          <img src="images/ASA_group_photo.jpg" alt = "ASA group photo" class = "page-img">
       </div>
 
       <div class = "page-section">
-         <a href = "PGA.html" class = "page-button"> PGA page </a>
+         <a href = "subpages/PGA.html" class = "page-button"> PGA </a>
          <img src="images/PGA_group_photo.png" alt = "PGA group photo" class = "page-img">
       </div>
       
