@@ -20,10 +20,12 @@ hr {
 body {
     border: 5px solid rgb(47, 18, 3);
     box-sizing: border-box;
-    background-color: rgb(255, 241, 181);
+    background-color: rgb(193, 219, 232);
     /*Used Claude AI to help me create some sort of random pattern for the background so that it wasn't bland */
     background-image: 
-        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
+        linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
     color: rgb(67, 48, 46);
     font-family: 'Monaco', monospace;
     min-height: 100vh;
@@ -36,6 +38,77 @@ body {
 /* content wrapper to push the footer all the way to the bottom */
 .content-wrapper {
     flex : 1;
+}
+
+.beacon {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.loader {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+/* used Claude AI to help make a spinning animation here */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.calendar-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.event {
+    background-color: rgb(255, 241, 181);
+    border: 2px solid rgb(106, 130, 62);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.event h3 {
+    margin: 0;
+    color: rgb(54, 64, 35);
+}
+
+.event p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(67, 48, 46);
+}
+
+.event-card {
+    background-color: rgb(252, 179, 197);
+    border: 2px solid rgb(106, 130, 62);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.event-card strong {
+    font-size: 18px;
+    color: rgb(54, 64, 35);
+}
+
+.event-card span {
+    font-size: 14px;
+    color: rgb(67, 48, 46);
 }
 
 /* footer formatting */

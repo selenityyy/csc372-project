@@ -2,7 +2,7 @@
 // This is a JavaScript file for the homepage of the website. The code below is for a typing animation for the welcome header, as well as smoother scrolling
 
 // typing animation for the welcome header at the top of the screen
-const welcomeHeader = "Welcome to the Asian Student Association Website!";
+const welcomeHeader = "Welcome to the Asian Students Association!";
 const headerElmt = document.getElementById('welcome-header');
 
 var charIdx = 0;
@@ -13,7 +13,7 @@ function typeWriter() {
     if (charIdx < welcomeHeader.length) {
         headerElmt.textContent += welcomeHeader.charAt(charIdx);
         charIdx++;
-        setTimeout(typeWriter, 80);
+        setTimeout(typeWriter, 60);
     }
 }
 
@@ -36,3 +36,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     }); 
 });
+
+function goHome() {
+    window.location.href = "index.html";
+}
