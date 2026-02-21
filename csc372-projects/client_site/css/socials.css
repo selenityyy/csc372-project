@@ -40,13 +40,17 @@ body {
     gap: 40px;
     padding: 20px;
     align-items: start;
+    text-align: center;
 }
 
 .socials-right {
     display: flex;
     flex-direction: row;
-    gap: 500px;
-    padding-top: 10px;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    justify-content: space-between;
+    width: 80%;
 }
 
 /* content wrapper to push the footer all the way to the bottom */
