@@ -41,6 +41,9 @@ const server = http.createServer((req, res) => {
     // using toLowerCase() to avoid case sensitivity and it's easier to use this directly
     let urlPath = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
 
+    console.log('Requested:', req.url); 
+    console.log('Processed path:', urlPath); 
+
     // defaults to index.html
     if (urlPath === '' || urlPath === '/') {
         urlPath = '/index.html';
