@@ -1,0 +1,51 @@
+h1 {
+    font-size: 36px;
+    display: inline-block;
+    text-align: center;
+    border: 4px solid rgb(106, 130, 62);
+    border-radius: 10px;
+    border-style: double;
+    padding: 10px;
+    background-color: rgb(252, 179, 197);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Formatting for the horizontal line that splits the header from the navigation menu */
+hr {
+    border: 2px solid rgb(106, 130, 62);
+    border-radius: 5px;
+}
+
+/* Formatting for the navigation menu/homepage */
+body {
+    border: 5px solid rgb(47, 18, 3);
+    box-sizing: border-box;
+    background-color: rgb(193, 219, 232);
+    /*Used Claude AI to help me create some sort of random pattern for the background so that it wasn't bland */
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: rgb(67, 48, 46);
+    font-family: 'Monaco', monospace;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+
+/* content wrapper to push the footer all the way to the bottom */
+.content-wrapper {
+    flex : 1;
+}
+
+/* footer formatting */
+footer {
+    padding: 5px;
+    text-align: center;
+    color:rgb(67, 48, 46);
+    font-size: 12px;
+    border-top: 2px solid rgb(54, 64, 35);
+    margin-top: auto;
+}
