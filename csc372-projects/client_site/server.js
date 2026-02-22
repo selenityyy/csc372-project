@@ -39,7 +39,7 @@ function getContentType(filePath) {
 const server = http.createServer((req, res) => {
     // remove query strings and convert to lowercase
     // using toLowerCase() to avoid case sensitivity and it's easier to use this directly
-    let urlPath = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
+    let urlPath = req.url.replace(/\/?(?:\?.*)?$/, '');
 
     console.log('Requested:', req.url); 
     console.log('Processed path:', urlPath); 
@@ -61,7 +61,7 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(port, () => {
+server.listen(port, '0.0.0.0', () => {
     console.log(`Server running at http://127.0.0.1:${port}/`);
 });
 
