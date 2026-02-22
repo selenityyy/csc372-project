@@ -1,0 +1,73 @@
+body {
+    border: 5px solid rgb(47, 18, 3);
+    box-sizing: border-box;
+    background-color: rgb(255, 241, 181);
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: rgb(67, 48, 46);
+    font-family: 'Monaco', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+body > img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    gap: 20px;
+}
+
+.error-code {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(252, 179, 197);
+}
+
+.error-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(252, 179, 197);
+}
+
+.home-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgb(252, 179, 197);
+    color: rgb(54, 64, 35);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid rgb(106, 130, 62);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.home-link:hover {
+    background-color: rgb(199, 163, 155);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px); /* slight lift on hover */
+}
+
+footer {
+    background-color: rgb(193, 219, 232);
+    padding: 10px;
+    text-align: center;
+}
