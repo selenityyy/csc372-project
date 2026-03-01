@@ -1,0 +1,16 @@
+{
+  "name": "handlebars-fav-animal",
+  "version": "1.0.0",
+  "description": "Handlebars Fave Animal",
+  "license": "ISC",
+  "author": "selena cabral",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.6"
+  }
+}
